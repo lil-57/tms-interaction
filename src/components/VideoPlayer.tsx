@@ -23,7 +23,7 @@ export const VideoPlayer = ({
 
   useEffect(() => {
     if (angleData.length > 0) {
-      const last = angleData[angleData.length - 1];
+      //const last = angleData[angleData.length - 1];
       setAngleData(angleData);
     }
   }, [angleData, setAngleData]);
