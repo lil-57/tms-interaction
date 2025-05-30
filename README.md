@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# 📽️ Analyse Vidéo TMS - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet permet d’analyser les mouvements d’un opérateur filmé pour détecter les postures critiques et les risques de troubles musculo-squelettiques (TMS). Il a été réalisé avec React, TypeScript, Vite, et Chart.js.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎞️ Lecture de vidéo synchronisée
+- 🦵 Extraction des angles articulaires : coudes, poignets, dos, cou, genoux
+- 📈 Affichage dynamique des courbes avec Chart.js
+- 📊 Tableau des angles maximaux
+- ⚠️ Avertissement si une articulation n’est pas visible
+- 🖼️ Interface ergonomique et responsive
+- 📄 Export PDF complet (graphique + tableau)
 
-## Expanding the ESLint configuration
+## 📷 Aperçu
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Aperçu de l'application](./assets/preview.png)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🔗 Voir le code source
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Le code complet est disponible sur GitHub :  
+👉 [github.com/ton-pseudo/nom-du-depot](https://github.com/lil-57/tms-interaction)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Stack technique
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- React + TypeScript
+- Vite
+- TailwindCSS
+- Chart.js
+- React-PDF
+
+---
+
