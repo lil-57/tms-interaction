@@ -12,14 +12,6 @@ Ce projet permet d’analyser les mouvements d’un opérateur filmé pour déte
 - 🖼️ Interface ergonomique et responsive
 - 📄 Export PDF complet (graphique + tableau)
 
-## 📷 Aperçu
-
-![Aperçu de l'application](./assets/preview.png)
-
-## 🔗 Voir le code source
-
-Le code complet est disponible sur GitHub :  
-👉 [github.com/ton-pseudo/nom-du-depot](https://github.com/lil-57/tms-interaction)
 
 ## 🛠️ Stack technique
 
